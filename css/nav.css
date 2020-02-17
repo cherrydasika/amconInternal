@@ -1,0 +1,47 @@
+﻿/***
+This tool is developed by CHarith Dasika on 12.07.2019
+Please refer to license agreement on information regarding software distribution. 
+****/
+.thumbnails{
+	width: 34px !important;
+    height: 34px !important;
+}
+
+
+ul.navmenu 
+{
+	text-decoration:none;
+	list-style-type:none;
+	width:60%;
+	margin:5px auto;
+	padding:5px;	
+	
+	
+}
+ul.navmenu li
+{
+	display:inline-block;
+    vertical-align: top;
+    padding:5px 0;
+	width:9.5%;	
+	border:2px solid green;
+	cursor:pointer;
+	text-align:center;
+	font-size:12px;
+	font-weight:normal;
+}
+
+ul.navmenu li:active{
+	background-color:green;
+	color:#ffffff;
+}
+
+a{
+	text-decoration:none;
+	color:black;
+}
+
+a:active{
+	text-decoration:underline;
+	color:black;
+}

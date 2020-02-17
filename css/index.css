@@ -1,0 +1,67 @@
+﻿
+
+.page
+{
+    width: 21cm;
+    height: 29.7cm;
+    padding: 8mm 10mm 10mm 10mm; /*These are the margins for the page*/
+    margin: 10px auto;
+    margin-bottom: 0.2cm;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+/*This is the content inside the page*/
+.subpage 
+{
+    padding: 0;
+    border: 2px black solid;
+    height: 278mm;
+    /*outline: 2cm solid red;*/        
+}
+    
+@page
+{
+    size: A4;
+    margin: 0px;
+}
+
+@media print
+{
+	#options, .hide-print{
+		display:none;
+	}
+
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+}
+
+#amcon-bb-1{ border-top: 1px solid black;}
+
+#amcon-mb-2{  margin:2px 0; padding: 0px;}
+
+#amcon-m-0{ margin:0;}
+
+#amcon-p-0{ padding: 0px; margin:0px; }
+
+input[type=date]{margin-left:0px;padding:4px 0; border-radius: 4px; border: 0px solid #CCCCCC; }
+
+.table-condensed>thead>tr>th, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>tbody>tr>td, .table-condensed>tfoot>tr>td{
+  padding: 3px; font-size: 12px; vertical-align: middle;  
+}
+.table-condensed>tbody{ height: auto;}
+
+
+
+
+
+textarea { font-size: 12px; resize: none; padding:0; }
